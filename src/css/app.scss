@@ -1,0 +1,103 @@
+// Import Fonts
+@import './fonts.scss';
+
+body {
+   font-family: 'Lato';
+   font-weight: 500;
+   color: $grey-9;
+   font-size: 1em;
+}
+.text-body1 {
+   font-family: 'Lato';
+   font-size: 1.4em;
+   line-height: 1.8em;
+   font-weight: 400;
+}
+.text-body2 {
+   font-family: 'Lato';
+   font-size: 1.2em;
+   line-height: 1.5em;
+}
+.text-h1,
+.text-h2,
+.text-h3,
+.text-h4,
+.text-h5,
+.text-h6 {
+   font-family: 'Milton One';
+}
+.text-h1,
+.text-h2,
+.text-h3 {
+   color: $secondary;
+}
+.text-h1 {
+   font-size: 10em;
+}
+.text-h2 {
+   font-size: 7em;
+}
+.text-h3 {
+   font-size: 5em;
+}
+.text-h4 {
+   font-size: 3em;
+}
+.text-h5 {
+   font-size: 1em;
+}
+.text-h6 {
+   font-size: 0.8em;
+}
+
+// app global css in SCSS form
+// breakpoint variable, from https://quasar.dev/style/breakpoints
+// Except the xs one because I think 600px is too small
+$xs-breakpoint: 718px;
+$sm-breakpoint: 1024px;
+$md-breakpoint: 1439px;
+$lg-breakpoint: 1920px;
+
+.container,
+.container-sm,
+.container-md,
+.container-lg,
+.container-xl {
+   width: 100%;
+   margin-right: auto;
+   margin-left: auto;
+}
+
+@media (min-width: $xs-breakpoint) {
+   .container,
+   .container-sm {
+      max-width: 540px;
+   }
+}
+
+@media (min-width: $sm-breakpoint) {
+   .container,
+   .container-sm,
+   .container-md {
+      max-width: 920px;
+   }
+}
+
+@media (min-width: $md-breakpoint) {
+   .container,
+   .container-sm,
+   .container-md,
+   .container-lg {
+      max-width: 1140px;
+   }
+}
+
+@media (min-width: $lg-breakpoint) {
+   .container,
+   .container-sm,
+   .container-md,
+   .container-lg,
+   .container-xl {
+      max-width: 1440px;
+   }
+}
